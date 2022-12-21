@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+ <html>
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Desserts' World</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
+    <link rel="icon" href ="favicon.ico">
+    <h1> Welcome to Desserts' World </h1>
+    <style type="text/css">
+        h1{
+            text-align: center
+        }
+    </style>
+</head>
+<body>
+
+
+  <!--Navbar!-->
+  <div class="pos-f-t">
+  <nav class="navbar navbar-expand-lg navbar-light">
+<a class="navbar-brand" href="">Desserts</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="recipes.html">Recipes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="popular.html">Popular</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="newrec.html">New recipes</a>
+        </li>
+      </ul>
+</div>
+</nav>
+</div>
+
+<!-- Container !-->
+<div class="container">
+  <img src="https://www.thedenizen.co.nz/wp-content/uploads/2021/03/Desserts5-900x500.jpg" alt="Norway" style="width:100%;">
+  <div class="text-block">
+    <h4>Matcha and coconut tres leches cake</h4>
+    <p>Matcha fans, this is the one for you.</p>
+  </div>
+</div>
+
+
+<!-- Mouseover Event !-->
+<script>
+function setImage(){
+  document.getElementById("img1").src="https://p.favim.com/orig/2019/01/28/food-aesthetic-dessert-Favim.com-6851821.jpg";
+}
+function setDifImage(){
+  document.getElementById("img1").src="https://data.whicdn.com/images/332869680/original.jpg";
+}
+</script>
+<img id="img1" onmouseover="setImage()" onmouseout="setDifImage()"
+src="https://data.whicdn.com/images/332869680/original.jpg" width="500"  height="500" align="right"/>
+
+
+
+
+<!-- Images !-->
+
+    <div class="images">
+    <img src="https://i.pinimg.com/564x/f4/ed/10/f4ed10eb05dcee01fc6b915b858e4a10.jpg" width="300" height="300" alight="bottom" >
+       <p> Vanilla Pancakes </p>
+       <p>This is the best vanilla pancake recipe. A classic butter cake but with Japanese techniques applied for the most plush, soft and moist yellow cake like you’ve never had before. This professional bakery style cake stays fresh and moist for 4 days — that’s unheard of!</p>
+       </div>
+
+
+<!-- Container !-->
+    <div class="container">
+      <img src="https://seemefeedmereadme.files.wordpress.com/2018/01/img_8930.jpg?w=1200" alt="Norway" style="width:100%;">
+      <div class="text-block">
+        <h4>French Tart</h4>
+        <p>Yummy, blueberry tart with pistachio ice cream.</p>
+      </div>
+    </div>
+
+
+<!-- Quot -->
+    <div>
+    <div id="comp-jmyn07y0" class="_1Q9if" data-testid="richTextElement">
+        <p class="font_2">&quot;Desserts are the fairy tales of the kitchen—a happily-ever-after to supper&quot;</p>
+    </div>
+    <div id="comp-jmyn97i1" class="_1Q9if" data-testid="richTextElement">
+        <p class="font_7" style="text-align:center;font-size:16px">Terri Guillemets</p>
+    </div>
+    </div>
+
+<!-- Animation !-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      $("button").click(function(){
+        $("#animation").animate({
+          height: 'toggle'
+        });
+      });
+    });
+    </script>
+    <button>Click here</button>
+    <div id="animation" style="background:#BCE6EB; height:100px; width:500px; position:absolute;">
+      <p class="font_2" style="text-align:center;font-size:30px">"As long as you know how to bake, life is sure to be sweet."</p>
+    </div>
+
+<!-- Form (Keypress event) !-->
+<input type="text" id="text"  placeholder="Leave your opinion here">
+<button type="submit" class="btn btn-info">Send</button>
+<script>
+document.getElementById("text").addEventListener("keypress", myFunction);
+function myFunction() {
+  document.getElementById("text").style.backgroundColor = "pink";
+
+}
+</script>
+
+
+    </body>
+</html>

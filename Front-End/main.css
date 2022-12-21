@@ -1,0 +1,100 @@
+body{
+    background-color:#FBE8F3;
+}
+.header {
+	width:100%;
+	padding-top: 80px;
+	position: absolute;
+	top:0;
+	left: 0;
+	right: 50;
+	z-index: 1000;
+
+}
+.container {
+  position:sticky;
+  max-width: 800px; /* Maximum width */
+  margin: 0 auto; /* Center it */
+}
+
+nav{
+  background-color:#BAABDA;
+}
+<style>
+h1 {
+  color: blue;
+  font-family: cursive;
+  font-size: 300%;
+}
+
+.row::after {
+  clear: both;
+  display: table;
+}
+.images{
+  width:200px;
+  text-align:center;
+  display:block;
+  border: 1px solid transparent;
+  margin-right: 50px;
+  margin-bottom: 10px;
+  margin-top:20px;
+  float:left;
+    float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+ .font_2{
+    line-height:1.5em;
+    text-align:center;
+    font-size:34px}
+body, html {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+/* Adding styles to the form container */
+.container1 {
+  position: absolute;
+  right: 0;
+  margin: 20px;
+  max-width: 300px;
+  padding: 16px;
+  background-color: white;
+}
+
+/* Container holding the image and the text */
+.container {
+  position: relative;
+}
+
+/* Bottom right text */
+.text-block {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
